@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Formulário de Contato</h1>
+    <form
+      action="https://formsubmit.co/leandrogameplay16@gmail.com"
+      method="POST"
+      class="form"
+    >
+      <label for="name">Nome</label>
+      <input type="text" name="name" id="name" required />
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" required />
+      <label for="cpf">CPF</label>
+      <input type="text" name="cpf" id="cpf" required>
+      <label for="numero">Número de Celular</label>
+      <input type="number" placeholder="+55" name="numero" required>
+      <label for="message">Escrvea sobre você</label>
+      <textarea name="message" id="message" required></textarea>
+      <input type="hidden" name="_captcha" value="false" />
+      <input
+        type="hidden"
+        name="_next"
+        value="https://yourdomain.co/thanks.html"
+      />
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
